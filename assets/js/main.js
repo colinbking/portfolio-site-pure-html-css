@@ -225,7 +225,8 @@
                                     
     // Get the button that opens the modal
     var btn = [document.getElementById("modalbtn"),
-    document.getElementById("modalbtn1"), document.getElementById("modalbtn2")]
+    document.getElementById("modalbtn1"), document.getElementById("modalbtn2"),
+    document.getElementById("modalbtn5")]
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close");
@@ -241,7 +242,7 @@
     btn[2].onclick = function() {
         modal[2].style.display = "block";
     }
-    
+
 
     // When the user clicks on <span> (x), close the modal
     span[0].onclick = function() {
@@ -253,6 +254,7 @@
     span[2].onclick = function() {
         modal[2].style.display = "none";
     }
+ 
     
 
     // When the user clicks anywhere outside of the modal, close it
@@ -266,6 +268,7 @@
         if (event.target == modal[2]) {
             modal[2].style.display = "none";
         }
+
     }
 
 
